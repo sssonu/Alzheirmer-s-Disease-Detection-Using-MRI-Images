@@ -1,12 +1,11 @@
-# 🧠 Early Detection of Alzheimer’s Disease Using Deep Learning
+# Early Detection of Alzheimer’s Disease Using Deep Learning
 
 An AI-based system for early detection and stage classification of Alzheimer’s disease using Brain MRI images and Convolutional Neural Networks (CNNs).
 
 This project was developed as part of the Project Based Learning – II (PBL-II) course in the B.Tech Computer Science & Engineering program at Symbiosis Institute of Technology, Pune.
 
----
 
-## 📌 Project Overview
+##  Project Overview
 
 Alzheimer’s disease is a progressive neurodegenerative disorder that affects memory, cognition, and daily functioning. Early diagnosis is crucial for slowing disease progression and improving patient quality of life.
 
@@ -22,9 +21,8 @@ This project proposes a deep learning–based image classification system that:
 - Provides visual explainability using Grad-CAM
 - Offers a simple web interface for predictions
 
----
 
-## 🎯 Objectives
+##  Objectives
 
 - Study Alzheimer’s disease progression using MRI scans
 - Build a CNN model for multi-class classification
@@ -44,7 +42,7 @@ This project proposes a deep learning–based image classification system that:
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - 🧠 MRI-based Alzheimer’s stage classification
 - 🤖 CNN-based deep learning model
@@ -54,7 +52,6 @@ This project proposes a deep learning–based image classification system that:
 - 📊 Four-class disease classification
 - ⚕️ Designed as a decision-support tool (not a replacement for medical professionals)
 
----
 
 ## 🛠️ Technologies Used
 
@@ -72,7 +69,6 @@ This project proposes a deep learning–based image classification system that:
 - Visual Studio Code
 - Git & GitHub
 
----
 
 ## 📂 Dataset
 
@@ -82,7 +78,6 @@ Each image represents a brain slice used for supervised learning.
 
 > Note: Dataset is used strictly for academic and research purposes.
 
----
 
 ## ⚙️ Methodology
 
@@ -122,7 +117,6 @@ A Flask-based local web application allows:
 - Disease stage prediction
 - Visualization of Grad-CAM results
 
----
 
 ## 📊 Results
 
@@ -131,7 +125,6 @@ A Flask-based local web application allows:
 - Grad-CAM visualizations aligned with neurologically relevant regions
 - Demonstrated feasibility of AI-assisted early Alzheimer’s detection
 
----
 
 ## ⚠️ Limitations
 
@@ -140,7 +133,6 @@ A Flask-based local web application allows:
 - Not validated for real-world clinical use
 - Cloud deployment challenges
 
----
 
 ## 🔮 Future Scope
 
@@ -151,7 +143,6 @@ A Flask-based local web application allows:
 - Enable mobile or edge-device healthcare solutions
 - Implement secure authentication and encrypted medical data handling
 
----
 
 ## ▶️ How to Run the Project
 
@@ -180,7 +171,6 @@ A Flask-based local web application allows:
    http://127.0.0.1:5000/
    ```
 
----
 
 ## 📜 License
 
