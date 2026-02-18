@@ -1,157 +1,189 @@
-**Early Detection of Alzheimer’s Disease Using Deep Learning**
+# 🧠 Early Detection of Alzheimer’s Disease Using Deep Learning
 
-This project focuses on the early detection and classification of Alzheimer’s disease using deep learning techniques applied to brain MRI images. It was developed as part of the Project Based Learning – II (PBL-II) course in the Bachelor of Technology (B.Tech) Computer Science & Engineering program at Symbiosis Institute of Technology, Pune.
+An AI-based system for early detection and stage classification of Alzheimer’s disease using Brain MRI images and Convolutional Neural Networks (CNNs).
 
-The primary goal of the project is to assist medical professionals by providing an AI-based decision support system that can classify different stages of Alzheimer’s disease accurately and efficiently.
+This project was developed as part of the Project Based Learning – II (PBL-II) course in the B.Tech Computer Science & Engineering program at Symbiosis Institute of Technology, Pune.
 
+---
 
-**Project Overview**
+## 📌 Project Overview
 
-Alzheimer’s disease is a progressive neurodegenerative disorder that affects memory, cognition, and daily functioning. Early diagnosis plays a critical role in slowing disease progression and improving patient quality of life. However, traditional diagnostic methods involving MRI or PET scans require expert interpretation, are time-consuming, costly, and not always accessible.
+Alzheimer’s disease is a progressive neurodegenerative disorder that affects memory, cognition, and daily functioning. Early diagnosis is crucial for slowing disease progression and improving patient quality of life.
 
-This project proposes a deep learning–based image classification system that analyzes brain MRI scans and classifies them into four stages of Alzheimer’s disease. The system uses a Convolutional Neural Network (CNN) and includes explainability through Grad-CAM visualizations to improve trust and interpretability.
+Traditional diagnostic approaches involving MRI or PET scans:
+- Require expert interpretation
+- Are time-consuming
+- Can be costly
+- May not be easily accessible in rural areas
 
-**Objectives**
+This project proposes a deep learning–based image classification system that:
+- Analyzes brain MRI scans
+- Classifies them into four stages of Alzheimer’s disease
+- Provides visual explainability using Grad-CAM
+- Offers a simple web interface for predictions
 
-To study Alzheimer’s disease progression using brain MRI scans
+---
 
-To build a CNN model for multi-class classification of Alzheimer’s stages
+## 🎯 Objectives
 
-To classify MRI images into:
+- Study Alzheimer’s disease progression using MRI scans
+- Build a CNN model for multi-class classification
+- Classify MRI images into:
+  - Non-Demented
+  - Very Mild Dementia
+  - Mild Dementia
+  - Moderate Dementia
+- Apply image preprocessing techniques
+- Evaluate model performance using:
+  - Accuracy
+  - Precision
+  - Recall
+  - Confusion Matrix
+- Provide explainable predictions using Grad-CAM
+- Build a user interface for image upload and prediction
 
-Non-Demented
+---
 
-Very Mild Dementia
+## 🚀 Key Features
 
-Mild Dementia
+- 🧠 MRI-based Alzheimer’s stage classification
+- 🤖 CNN-based deep learning model
+- 🖼 Image preprocessing (resizing & normalization)
+- 🔥 Grad-CAM visual explanations
+- 🌐 Flask-based local web application
+- 📊 Four-class disease classification
+- ⚕️ Designed as a decision-support tool (not a replacement for medical professionals)
 
-Moderate Dementia
+---
 
-To apply image preprocessing techniques for consistency and accuracy
+## 🛠️ Technologies Used
 
-To evaluate the model using accuracy, precision, recall, and confusion matrix
+### Programming & Frameworks
+- Python 3.11
+- TensorFlow (Keras API)
+- Flask
 
-To demonstrate the feasibility of AI-assisted early diagnosis
+### Image Processing & Visualization
+- Pillow (PIL)
+- Grad-CAM
 
-To provide explainable predictions using Grad-CAM
+### Development Tools
+- Jupyter Notebook
+- Visual Studio Code
+- Git & GitHub
 
-To build a basic user interface for image upload and prediction
+---
 
-**Key Features**
+## 📂 Dataset
 
-MRI-based Alzheimer’s stage classification
+The dataset consists of labeled Brain MRI images categorized into four classes representing different stages of Alzheimer’s disease.
 
-CNN-based deep learning model
+Each image represents a brain slice used for supervised learning.
 
-Image preprocessing including resizing and normalization
+> Note: Dataset is used strictly for academic and research purposes.
 
-Grad-CAM based visual explanation of predictions
+---
 
-Four-class disease classification
+## ⚙️ Methodology
 
-Local web interface using Flask
+### 1️⃣ Data Collection & Understanding
+- Studied MRI image distribution
+- Analyzed class imbalance
+- Observed disease characteristics
 
-Designed as a clinical decision support tool (not a replacement for doctors)
+### 2️⃣ Image Preprocessing
+- Grayscale conversion
+- Image resizing to uniform dimensions
+- Pixel normalization
+- Channel duplication (where required)
 
-**Technologies Used**
-Programming & Frameworks
+### 3️⃣ Model Architecture
+- Convolutional layers
+- Max pooling layers
+- Dropout layers
+- Fully connected dense layers
+- Softmax output layer
 
-Python 3.11
+Optimizer: Adam  
+Loss Function: Categorical Cross-Entropy  
+Regularization: Dropout & Early Stopping  
 
-TensorFlow with Keras
+### 4️⃣ Model Evaluation
+- Accuracy
+- Confusion Matrix
+- Precision & Recall
 
-Flask (for local deployment)
+### 5️⃣ Explainability
+Grad-CAM heatmaps were generated to highlight important brain regions influencing the model’s predictions.
 
-Image Processing & Visualization
+### 6️⃣ Deployment
+A Flask-based local web application allows:
+- MRI image upload
+- Disease stage prediction
+- Visualization of Grad-CAM results
 
-Pillow (PIL)
+---
 
-Grad-CAM for explainability
+## 📊 Results
 
-Development Tools
+- Achieved approximately 97% classification accuracy (local testing)
+- Clear separation between dementia stages
+- Grad-CAM visualizations aligned with neurologically relevant regions
+- Demonstrated feasibility of AI-assisted early Alzheimer’s detection
 
-Jupyter Notebook
+---
 
-Visual Studio Code
+## ⚠️ Limitations
 
-Git & GitHub for version control
+- Performance may drop on low-quality MRI images
+- Limited dataset diversity
+- Not validated for real-world clinical use
+- Cloud deployment challenges
 
-**Dataset**
+---
 
-The dataset consists of labeled brain MRI images categorized into four classes representing different stages of Alzheimer’s disease. Each image represents a brain slice used for supervised learning.
+## 🔮 Future Scope
 
-**Methodology**
+- Train on larger and more diverse datasets
+- Integrate multimodal medical data (MRI, PET, cognitive scores, genetics)
+- Implement advanced architectures (ResNet, DenseNet, EfficientNet)
+- Deploy on AWS / Azure / Google Cloud
+- Enable mobile or edge-device healthcare solutions
+- Implement secure authentication and encrypted medical data handling
 
-Data Collection and Understanding
-MRI images were collected and analyzed to understand class distribution and disease characteristics.
+---
 
-Image Preprocessing
+## ▶️ How to Run the Project
 
-Grayscale conversion
+1. Clone the repository
+   ```
+   git clone https://github.com/your-username/your-repository-name.git
+   ```
 
-Image resizing to uniform dimensions
+2. Navigate to the project folder
+   ```
+   cd project-folder
+   ```
 
-Normalization of pixel values
+3. Install dependencies
+   ```
+   pip install -r requirements.txt
+   ```
 
-Channel duplication where required
+4. Run the Flask app
+   ```
+   python gradcam_flask.py
+   ```
 
-Model Design and Training
+5. Open browser and go to:
+   ```
+   http://127.0.0.1:5000/
+   ```
 
-CNN architecture with convolution, pooling, and dropout layers
+---
 
-Adam optimizer and categorical cross-entropy loss
-
-Class weighting and early stopping to prevent overfitting
-
-Model Evaluation
-
-Accuracy
-
-Confusion matrix
-
-Precision and recall
-
-Explainability
-
-Grad-CAM heatmaps to visualize important brain regions influencing predictions
-
-Deployment
-
-Flask-based local web application for image upload and prediction
-
-Results
-
-Achieved high classification accuracy (around 97 percent in local testing)
-
-Clear separation between dementia stages
-
-Grad-CAM visualizations aligned with neurologically relevant brain regions
-
-Demonstrated feasibility of AI-based early Alzheimer’s detection
-
-**Limitations**
-
-Performance may drop on low-quality or noisy MRI images
-
-Cloud deployment faced technical challenges
-
-Requires larger and more diverse datasets for real-world use
-
-**Future Scope**
-
-Training on larger and more diverse datasets
-
-Integration of multimodal data (MRI, PET, cognitive scores, genetics)
-
-Use of advanced architectures such as ResNet, DenseNet, EfficientNet
-
-Full cloud deployment on AWS, Azure, or Google Cloud
-
-Mobile or edge-device deployment for rural and remote healthcare
-
-Secure authentication and data handling
-
-
-License
+## 📜 License
 
 This project is developed strictly for academic and educational purposes.
+
+It is not intended for clinical diagnosis or medical use.
